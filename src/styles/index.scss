@@ -1,0 +1,19 @@
+@import "~vazirmatn/Vazirmatn-font-face.css";
+@import "variables";
+
+html {
+  direction: rtl;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-text);
+  background-color: var(--color-gray-lightest);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
