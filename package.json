@@ -2,6 +2,16 @@
   "name": "todoro",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Masud Afsar",
+    "email": "masud@afsar.info",
+    "url": "https://github.com/masudafsar/"
+  },
+  "homepage": "https://masudafsar.github.io/ToDoRo",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:masudafsar/ToDoRo.git"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
