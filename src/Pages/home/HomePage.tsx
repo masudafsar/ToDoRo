@@ -20,7 +20,15 @@ export const HomePage: React.FC = () => {
                     <h2 className={styles.Title}>Tasks</h2>
                 </Container>
                 <div className={styles.Tasks}>
-                    {tasks?.map(task => (<TaskCard key={task.id} task={task}/>))}
+                    {tasks && tasks.length > 0 ? tasks.map(task => (<TaskCard key={task.id} task={task}/>)) : (
+                        <div className={styles.Message}>
+                            <p>
+                                You have nothing to do.
+                                <br/>
+                                Go get some sleep.
+                            </p>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

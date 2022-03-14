@@ -12,7 +12,7 @@ import {Task} from "../../types/task";
 import {Select} from "./input/Select";
 import {getNextTaskStatuses} from "../../types/taskStatus";
 
-import styles from './AddTaskForm.module.scss';
+import styles from './TaskForm.module.scss';
 
 interface Props {
     task: Task;
@@ -32,14 +32,15 @@ export const EditTaskForm: React.FC<Props> = ({task}) => {
     }
 
     return (
-        <form className={styles.AddTaskForm} onSubmit={handleSubmit(onSubmit)}>
+        <form className={styles.TaskForm} onSubmit={handleSubmit(onSubmit)}>
+            <h3 className={styles.Title}>Edit Task</h3>
             <TextInput
                 placeholder="Title"
                 {...register('title')}
             />
             <TextArea
                 placeholder="Description"
-                rows={5}
+                rows={10}
                 {...register('description')}
             />
             <Select
@@ -55,10 +56,17 @@ export const EditTaskForm: React.FC<Props> = ({task}) => {
                     </option>
                 ))}
             </Select>
-            <Button type="submit">
-                <span>Edit</span>
-                <Icon icon={EditIcon}/>
-            </Button>
+            <div className={styles.Actions}>
+                <Button type="submit">
+                    <span>Edit</span>
+                    <Icon icon={EditIcon}/>
+                </Button>
+                <Button type="button" onClick={() => {
+                    navigate('/');
+                }}>
+                    <span>Cancel</span>
+                </Button>
+            </div>
         </form>
     );
 }

@@ -10,7 +10,7 @@ import {TasksContext} from "../../contexts/TasksContext";
 import {Task} from "../../types/task";
 import {TaskStatus} from "../../types/taskStatus";
 
-import styles from './AddTaskForm.module.scss';
+import styles from './TaskForm.module.scss';
 
 interface Props {
 
@@ -31,14 +31,15 @@ export const AddTaskForm: React.FC<Props> = () => {
     }
 
     return (
-        <form className={styles.AddTaskForm} onSubmit={handleSubmit(onSubmit)}>
+        <form className={styles.TaskForm} onSubmit={handleSubmit(onSubmit)}>
+            <h3 className={styles.Title}>Add new Task</h3>
             <TextInput
                 placeholder="Title"
                 {...register('title')}
             />
             <TextArea
                 placeholder="Description"
-                rows={5}
+                rows={3}
                 {...register('description')}
             />
             <Button type="submit">

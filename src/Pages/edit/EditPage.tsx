@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react';
+import {Link, useParams} from "react-router-dom";
 
-import {useParams} from "react-router-dom";
 import {Task} from "../../types/task";
 import {TasksContext} from "../../contexts/TasksContext";
 import {Container} from "../../components/container/Container";
@@ -21,7 +21,12 @@ export const EditPage: React.FC = () => {
     return (
         <div className={styles.EditPage}>
             <Container>
-                {task ? (<EditTaskForm task={task}/>) : null}
+                {task ? (<EditTaskForm task={task}/>) : (
+                    <>
+                        <p>Something went wrong</p>
+                        <Link to="/">Back</Link>
+                    </>
+                )}
             </Container>
         </div>
     );

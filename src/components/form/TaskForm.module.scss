@@ -1,0 +1,21 @@
+.TaskForm {
+  width: 100% ;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: var(--gap-size);
+
+  .Title {
+    margin: 0;
+  }
+
+  .Actions {
+    display: flex;
+    gap: var(--gap-size);
+
+    button {
+      flex: 1 1;
+    }
+  }
+}

@@ -1,1 +1,5 @@
-.EditPage {}
+.EditPage {
+  height: calc(100vh - var(--header-size));
+  display: flex;
+  flex-direction: column;
+}
