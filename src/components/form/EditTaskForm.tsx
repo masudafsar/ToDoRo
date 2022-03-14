@@ -9,9 +9,10 @@ import {TextArea} from "./input/TextArea";
 import {Button} from "./button/Button";
 import {TasksContext} from "../../contexts/TasksContext";
 import {Task} from "../../types/task";
+import {Select} from "./input/Select";
+import {getNextTaskStatuses} from "../../types/taskStatus";
 
 import styles from './AddTaskForm.module.scss';
-import {getNextTaskStatuses} from "../../types/taskStatus";
 
 interface Props {
     task: Task;
@@ -41,7 +42,7 @@ export const EditTaskForm: React.FC<Props> = ({task}) => {
                 rows={5}
                 {...register('description')}
             />
-            <select
+            <Select
                 {...register("status")}
             >
                 <option value={task.status}>{task.status}</option>
@@ -53,7 +54,7 @@ export const EditTaskForm: React.FC<Props> = ({task}) => {
                         {status}
                     </option>
                 ))}
-            </select>
+            </Select>
             <Button type="submit">
                 <span>Edit</span>
                 <Icon icon={EditIcon}/>
