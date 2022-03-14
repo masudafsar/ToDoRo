@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
+
 import reportWebVitals from './reportWebVitals';
+import {TaskManagementApp} from './layouts/TaskManagementApp';
 
 import './styles/index.scss';
 
 ReactDOM.render(
     <React.StrictMode>
-        {/*<App/>*/}
+        <BrowserRouter>
+            <TaskManagementApp/>
+        </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
 );
