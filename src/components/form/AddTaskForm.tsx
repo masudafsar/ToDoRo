@@ -1,14 +1,16 @@
 import React, {useContext} from 'react';
+import {SubmitHandler, useForm} from "react-hook-form";
+import {Icon} from "@iconify/react";
+import AddIcon from "@iconify/icons-ic/twotone-add";
 
-import styles from './AddTaskForm.module.scss';
 import {TextInput} from "./input/TextInput";
 import {TextArea} from "./input/TextArea";
 import {Button} from "./button/Button";
-import {Icon} from "@iconify/react";
-import AddIcon from "@iconify/icons-ic/twotone-add";
 import {TasksContext} from "../../contexts/TasksContext";
 import {Task} from "../../types/task";
-import {SubmitHandler, useForm} from "react-hook-form";
+import {TaskStatus} from "../../types/taskStatus";
+
+import styles from './AddTaskForm.module.scss';
 
 interface Props {
 
@@ -18,7 +20,7 @@ export const AddTaskForm: React.FC<Props> = ({}) => {
     const {addTask} = useContext(TasksContext);
     const {register, handleSubmit, setValue} = useForm<Task>({
         defaultValues: {
-            status: "To Do",
+            status: TaskStatus.toDo,
         }
     });
 

@@ -2,10 +2,10 @@ import React, {useContext} from 'react';
 
 import {Container} from '../../components/container/Container';
 import {AddTaskForm} from "../../components/form/AddTaskForm";
-
-import styles from './HomePage.module.scss';
 import {TasksContext} from "../../contexts/TasksContext";
 import {TaskCard} from "../../components/task/TaskCard";
+
+import styles from './HomePage.module.scss';
 
 export const HomePage: React.FC = () => {
     const {getTasks} = useContext(TasksContext);
