@@ -20,6 +20,12 @@ export const TasksProvider: React.FC<Props> = ({children}) => {
         });
     }
     const handleEditTask = (task: Task) => {
+        setTasks(prevState => {
+            const newState = [...prevState];
+            const index = newState.findIndex(item => item.id === task.id);
+            newState[index] = task;
+            return newState;
+        })
     }
     const handleGetTasks = () => {
         return tasks;

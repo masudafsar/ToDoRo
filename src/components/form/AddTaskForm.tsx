@@ -16,7 +16,7 @@ interface Props {
 
 }
 
-export const AddTaskForm: React.FC<Props> = ({}) => {
+export const AddTaskForm: React.FC<Props> = () => {
     const {addTask} = useContext(TasksContext);
     const {register, handleSubmit, setValue} = useForm<Task>({
         defaultValues: {

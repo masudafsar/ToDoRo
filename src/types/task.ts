@@ -1,3 +1,5 @@
+import {TaskStatus} from "./taskStatus";
+
 export interface Task {
     id?: number;
     title?: string;
