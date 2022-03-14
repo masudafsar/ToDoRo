@@ -13,9 +13,9 @@ export const Header: React.FC<Props> = ({}) => {
         <header className={styles.Header}>
             <Container className={styles.Container}>
                 <h1 className={styles.Title}>Task Management</h1>
-                <button className={styles.IconButton}>
+                {/*<button className={styles.IconButton}>
                     <Icon icon={AddIcon}/>
-                </button>
+                </button>*/}
             </Container>
         </header>
     );

@@ -18,7 +18,7 @@ export const TaskCard: React.FC<Props> = ({task}) => {
             <p className={styles.Description}>{task.description}</p>
             <div className={styles.Actions}>
                 <span className={styles.Status}>{task.status}</span>
-                <Link to={'/ss'}>
+                <Link to={`/edit/${task.id}/`}>
                     <Icon icon={EditIcon}/>
                 </Link>
             </div>

@@ -21,6 +21,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
 }
 .Status {
   background-color: var(--color-primary);
