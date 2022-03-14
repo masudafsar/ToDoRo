@@ -22,9 +22,17 @@
   }
 
   .Tasks {
+    padding: 2rem var(--gap-size);
     background-color: var(--color-primary-acent);
-    overflow: hidden;
+    overflow: {
+      x: hidden;
+      y: scroll;
+    };
     flex: 1 1;
+    display: flex;
+    gap: var(--gap-size);
+    flex-wrap: wrap;
+    justify-content: center;
     border-radius: var(--border-radius) var(--border-radius) 0 0;
   }
 }
