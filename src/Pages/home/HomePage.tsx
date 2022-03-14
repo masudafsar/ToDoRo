@@ -7,8 +7,14 @@ export const HomePage: React.FC = () => {
     return (
         <div className={styles.HomePage}>
             <Container>
-                <h2 className={styles.Title}>Tasks</h2>
+                <div className={styles.AddTaskForm}>FORM</div>
             </Container>
+            <div className={styles.TasksContainer}>
+                <Container>
+                    <h2 className={styles.Title}>Tasks</h2>
+                </Container>
+                <div className={styles.Tasks}></div>
+            </div>
         </div>
     );
 }

@@ -41,7 +41,11 @@
   --color-danger: var(--color-red-dark);
   --color-warning: var(--color-yellow-dark);
 
-  --header-size: 50px;
-  --gap-size: 1.5rem;
+  --header-font-size: 1.5rem;
+  --header-line-height: 2.5;
+  --header-size: calc(var(--header-font-size) * var(--header-line-height));
+
+  --gap-size: 1rem;
   --container-width: 720px;
+  --border-radius: 2rem;
 }

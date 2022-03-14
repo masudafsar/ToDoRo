@@ -1,13 +1,33 @@
 .HomePage {
-  margin-top: 3rem;
+  height: calc(100vh - var(--header-size));
+  display: flex;
+  flex-direction: column;
+}
+
+.AddTaskForm {
+}
+
+.TasksContainer {
   background-color: var(--color-purple-dark);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
   overflow: hidden;
-  border-radius: 3rem 3rem 0 0;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
 
   .Title {
     margin: 0;
+    padding: 1rem 0;
+    text-align: center;
     color: var(--color-white);
-    font-size: 1.2rem;
-    line-height: 2;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .Tasks {
+    background-color: var(--color-purple-light);
+    overflow: hidden;
+    flex: 1 1;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
   }
 }
