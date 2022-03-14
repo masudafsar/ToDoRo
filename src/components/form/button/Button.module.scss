@@ -1,0 +1,21 @@
+.Button {
+  padding: .5rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  line-height: 2;
+
+  &:hover {
+    background-color: var(--color-purple-light);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.FullButton {
+  width: 100%;
+}
