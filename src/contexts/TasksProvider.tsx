@@ -7,14 +7,17 @@ interface Props {
 
 export const TasksProvider: React.FC<Props> = ({children}) => {
     const [tasks, setTasks] = useState<Task[]>([]);
+    const [lastId, setLastId] = useState(0);
 
     const handleAddTask = (task: Task) => {
+        task.id = lastId + 1;
+        setLastId(prevState => prevState + 1);
         setTasks(prevState => {
             return [
                 task,
                 ...prevState,
             ]
-        })
+        });
     }
     const handleEditTask = (task: Task) => {
     }
