@@ -4,13 +4,16 @@ import {BrowserRouter} from 'react-router-dom';
 
 import reportWebVitals from './reportWebVitals';
 import {TaskManagementApp} from './layouts/TaskManagementApp';
+import {TasksProvider} from "./contexts/TasksProvider";
 
 import './styles/index.scss';
 
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
-            <TaskManagementApp/>
+            <TasksProvider>
+                <TaskManagementApp/>
+            </TasksProvider>
         </BrowserRouter>
     </React.StrictMode>,
     document.getElementById('root')
