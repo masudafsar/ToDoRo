@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ToDoRo/static/css/main.3527bd73.css",
+    "main.js": "/ToDoRo/static/js/main.6b17870e.js",
+    "static/js/787.100dd045.chunk.js": "/ToDoRo/static/js/787.100dd045.chunk.js",
+    "static/media/Vazirmatn-Bold.woff2": "/ToDoRo/static/media/Vazirmatn-Bold.7855ba89c53fb74f8d0c.woff2",
+    "static/media/Vazirmatn-ExtraBold.woff2": "/ToDoRo/static/media/Vazirmatn-ExtraBold.2a73afe6f836be09db4f.woff2",
+    "static/media/Vazirmatn-Medium.woff2": "/ToDoRo/static/media/Vazirmatn-Medium.50162fb88650832664ce.woff2",
+    "static/media/Vazirmatn-SemiBold.woff2": "/ToDoRo/static/media/Vazirmatn-SemiBold.4e5cff12df4281b815ab.woff2",
+    "static/media/Vazirmatn-ExtraLight.woff2": "/ToDoRo/static/media/Vazirmatn-ExtraLight.536fe69c85169c635e66.woff2",
+    "static/media/Vazirmatn-Black.woff2": "/ToDoRo/static/media/Vazirmatn-Black.bd2bea756b56026bf8a4.woff2",
+    "static/media/Vazirmatn-Light.woff2": "/ToDoRo/static/media/Vazirmatn-Light.c577fc661f20b71c1ea3.woff2",
+    "static/media/Vazirmatn-Regular.woff2": "/ToDoRo/static/media/Vazirmatn-Regular.ea3f88a44da457e34b38.woff2",
+    "static/media/Vazirmatn-Thin.woff2": "/ToDoRo/static/media/Vazirmatn-Thin.a5418e702f94d66b56de.woff2",
+    "index.html": "/ToDoRo/index.html",
+    "main.3527bd73.css.map": "/ToDoRo/static/css/main.3527bd73.css.map",
+    "main.6b17870e.js.map": "/ToDoRo/static/js/main.6b17870e.js.map",
+    "787.100dd045.chunk.js.map": "/ToDoRo/static/js/787.100dd045.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3527bd73.css",
+    "static/js/main.6b17870e.js"
+  ]
+}
