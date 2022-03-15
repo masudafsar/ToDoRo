@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ToDoRo/static/css/main.3527bd73.css",
-    "main.js": "/ToDoRo/static/js/main.9c2cd372.js",
+    "main.js": "/ToDoRo/static/js/main.10bf4f85.js",
     "static/js/787.100dd045.chunk.js": "/ToDoRo/static/js/787.100dd045.chunk.js",
     "static/media/Vazirmatn-Bold.woff2": "/ToDoRo/static/media/Vazirmatn-Bold.7855ba89c53fb74f8d0c.woff2",
     "static/media/Vazirmatn-ExtraBold.woff2": "/ToDoRo/static/media/Vazirmatn-ExtraBold.2a73afe6f836be09db4f.woff2",
@@ -14,11 +14,11 @@
     "static/media/Vazirmatn-Thin.woff2": "/ToDoRo/static/media/Vazirmatn-Thin.a5418e702f94d66b56de.woff2",
     "index.html": "/ToDoRo/index.html",
     "main.3527bd73.css.map": "/ToDoRo/static/css/main.3527bd73.css.map",
-    "main.9c2cd372.js.map": "/ToDoRo/static/js/main.9c2cd372.js.map",
+    "main.10bf4f85.js.map": "/ToDoRo/static/js/main.10bf4f85.js.map",
     "787.100dd045.chunk.js.map": "/ToDoRo/static/js/787.100dd045.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3527bd73.css",
-    "static/js/main.9c2cd372.js"
+    "static/js/main.10bf4f85.js"
   ]
 }
