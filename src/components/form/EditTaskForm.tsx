@@ -61,9 +61,13 @@ export const EditTaskForm: React.FC<Props> = ({task}) => {
                     <span>Edit</span>
                     <Icon icon={EditIcon}/>
                 </Button>
-                <Button type="button" onClick={() => {
-                    navigate('/');
-                }}>
+                <Button
+                    className={styles.CancelButton}
+                    type="button"
+                    onClick={() => {
+                        navigate('/');
+                    }}
+                >
                     <span>Cancel</span>
                 </Button>
             </div>
