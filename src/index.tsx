@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter} from 'react-router-dom';
+import {HashRouter} from 'react-router-dom';
 
 import reportWebVitals from './reportWebVitals';
 import {TaskManagementApp} from './layouts/TaskManagementApp';
@@ -10,11 +10,11 @@ import './styles/index.scss';
 
 ReactDOM.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <TasksProvider>
                 <TaskManagementApp/>
             </TasksProvider>
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>,
     document.getElementById('root')
 );
